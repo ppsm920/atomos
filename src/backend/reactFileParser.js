@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import getComponentNames from './getComponentNames';
 import renderComponentTree from './renderComponentTree';
 
@@ -7,6 +8,11 @@ import renderComponentTree from './renderComponentTree';
 // retrieving React app data from the window via React Devtools
 const dev = window.__REACT_DEVTOOLS_GLOBAL_HOOK__;
 
+// sends the array with tree data to content.js
+function sendToContentScript(fiberTree) {
+  const tree = JSON.parse(JSON.stringify(fiberTree));
+  window.postMessage({ tree }, '*');
+}
 // patching / rewriting the onCommitFiberRoot functionality
 dev.onCommitFiberRoot = (function (original) {
   return function (...args) {
@@ -17,13 +23,6 @@ dev.onCommitFiberRoot = (function (original) {
     // convert getComponentNames data into array of objects that ReactFlow can read
     const treeNodes = renderComponentTree(GCN);
     // invoke sendToContentScript to send treeNode data to the front end
-    sendToContentScript(treeNodes);
-    console.log('THE NODES FROM REACT FILE PARSER:', treeNodes);
+    sendToContentScript(treeNodes)
   };
 }(dev.onCommitFiberRoot));
-
-// sends the array with tree data to content.js
-function sendToContentScript(fiberTree) {
-  const tree = JSON.parse(JSON.stringify(fiberTree));
-  window.postMessage({ tree }, '*');
-}
