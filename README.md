@@ -1,12 +1,3 @@
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -28,14 +19,14 @@
 <br />
 <p align="center">
   <a href="https://github.com/oslabs-beta/atomos">
-    <img src="assets/atomos-banner.png" alt="Logo" height="200">
+    <img src="assets/atomos-banner.png" alt="Logo" width="600px">
   </a>
 
   <h3 align="center">Atomos</h3>
 
   <p align="center">
     Atomos is an open source Chrome developer tool for Recoil that provides real-time visualization of the component tree and atom-selector relationships to facilitate the debugging of a React application. <br /> Atomos was developed under tech accelerator OSLabs.
-    <br />
+    <br /><br />
     <a href="https://www.getatomos.io"><strong>getatomos.io</strong></a>
     <br />
     <br />
@@ -66,7 +57,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#features">Features</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#core-team">Core Team</a></li>
@@ -78,16 +69,20 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<p align="center">
+  <img src="assets/StaticTree.jpg" alt="Atomos Component Tree" width="600px">
+</p>
 
-Atomos is an open source Chrome developer tool for Recoil that provides real-time visualization of the component tree and atom-selector relationships to facilitate the debugging of a React application. Atomos was developed under tech accelerator OSLabs.
+Atomos is an open source Chrome developer tool designed for Recoil, Facebook's experimental state management library. Atomos provides real-time visualizations of a React/Recoil application’s structure and state to ensure more stable, performant code, less time spent debugging, and faster development cycles.
 
-Why we built this project:
-* Feature 1
-* Feature 2
-* Feature :smile:
+Key features of our developer tool include:
+* Dynamically rendered component tree visualizations which update with state changes
+* Atom and selector dropdown menus to view advanced component data
+* Clean and intuitive UI, developed with React Flow
+* Seamless integration with React Devtools
+* Quick and easy Chrome extension installation
 
-Atomos is an open source Chrome developer tool for Recoil that provides real-time visualization of the component tree and atom-selector relationships to facilitate the debugging of a React application. Atomos was developed under tech accelerator OSLabs.
+<ins>Please note that Atomos is still in beta.</ins>
 
 
 ### Built With
@@ -115,7 +110,7 @@ The React Developer Tools Chrome <a href="https://chrome.google.com/webstore/det
 
 ### Installation
 
-To get started, download the Atomos [extension](https://example.com) from the Chrome Web Store.
+<strong><ins>To get started, download the Atomos [extension](https://chrome.google.com/webstore/detail/atomos/hdoljekhdmbkopfbcdljnjmjkgfgoebi?hl=en) from the Chrome Web Store.</ins></strong>
 
 Alternatively, you can manually install Atomos in [Developer mode](https://developer.chrome.com/docs/extensions/mv3/faq/#faq-dev-01).
 
@@ -136,18 +131,42 @@ Alternatively, you can manually install Atomos in [Developer mode](https://devel
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Features
+<p align="center">
+  <img src="assets/ComponentTree.gif" alt="Atomos Component Tree GIF" width="600px">
+  <h3 align="center"><ins>Component Tree</ins></h3>
+  <p align="center">
+    Atomos analyzes Recoil applications and renders interactive component trees powered by React Flow
+  </p>
+</p>
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+<br>
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+<p align="center">
+  <img src="assets/DynamicRender.gif" alt="Atomos Dynamic Rendering GIF" width="600px">
+  <h3 align="center"><ins>Dynamic Rendering</ins></h3>
+  <p align="center">
+    Atomos dynamically renders the component tree as the application changes - no need to reload the app
+  </p>
+</p>
 
+<br>
+
+<p align="center">
+  <img src="assets/StateSelection.gif" alt="Atomos Atom and Selector GIF" width="600px">
+  <h3 align="center"><ins>Atom and Selector Relationships</ins></h3>
+  <p align="center">
+  Atomos tracks atoms and selectors throughout the application and selectively highlights them on the component tree to streamline the debugging process
+  </p>
+</p>
+
+<br>
 
 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -160,20 +179,20 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See [`LICENSE`](https://github.com/oslabs-beta/atomos/blob/main/LICENSE) for more information.
 
 
 
 <!-- CORE TEAM -->
 ## Core Team
 
-Cole Redfearn - [@GitHub](https://github.com/coleredfearn/) - [@LinkedIn](https://www.linkedin.com/in/coleredfearn/)
+:star: Cole Redfearn - [@GitHub](https://github.com/coleredfearn/) - [@LinkedIn](https://www.linkedin.com/in/coleredfearn/)
 
-Jonathan Mendoza - [@GitHub](https://github.com/mendxza) - [@LinkedIn](https://twitter.com/your_username)
+:star: Jonathan Mendoza - [@GitHub](https://github.com/mendxza) - [@LinkedIn](https://twitter.com/your_username)
 
-Sumin Kim - [@GitHub](https://github.com/ppsm920/) - [@LinkedIn](https://www.linkedin.com/in/ppsm920/)
+:star: Sumin Kim - [@GitHub](https://github.com/ppsm920/) - [@LinkedIn](https://www.linkedin.com/in/ppsm920/)
 
-Vicki Lee - [@GitHub](https://github.com/vlee022/) - [@LinkedIn](https://www.linkedin.com/in/vlee022/)
+:star: Vicki Lee - [@GitHub](https://github.com/vlee022/) - [@LinkedIn](https://www.linkedin.com/in/vlee022/)
 
 
 
@@ -189,8 +208,7 @@ Vicki Lee - [@GitHub](https://github.com/vlee022/) - [@LinkedIn](https://www.lin
 [stars-url]: https://github.com/oslabs-beta/atomos/stargazers
 [issues-shield]: https://img.shields.io/github/issues/oslabs-beta/atomos.svg?style=for-the-badge
 [issues-url]: https://github.com/oslabs-beta/atomos/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/oslabs-beta/atomos.svg?style=for-the-badge
+[license-url]: https://github.com/oslabs-beta/atomos/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/getatomos/
-[product-screenshot]: images/screenshot.png
